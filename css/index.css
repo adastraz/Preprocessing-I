@@ -1,1 +1,290 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Acme Regular'), local('Acme-Regular'), url(https://fonts.gstatic.com/s/acme/v9/RrQfboBx-C5_XxrBaw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WiHGA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7CA.ttf) format('truetype');
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+  background: darkslateblue;
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: darkcyan;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+@media (max-width: 600px) {
+  nav a {
+    padding: 3%;
+  }
+}
+nav a:hover {
+  background: lightcoral;
+  color: black;
+}
+main {
+  display: flex;
+  background: lightblue;
+  justify-content: space-evenly;
+}
+main img {
+  width: 15%;
+}
+@media (max-width: 1200px) {
+  main img {
+    width: 18%;
+  }
+}
+@media (max-width: 1000px) {
+  main img {
+    display: none;
+  }
+}
+main .black {
+  width: 15%;
+}
+@media (max-width: 1200px) {
+  main .black {
+    width: 18%;
+  }
+}
+@media (max-width: 1000px) {
+  main .black {
+    display: none;
+  }
+}
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+}
+.main h1 {
+  font-size: 4rem;
+  padding: 2%;
+  color: darksalmon;
+  font-family: 'Acme', sans-serif;
+}
+.main .web {
+  padding: 0;
+}
+.main p {
+  font-size: 2rem;
+  padding: 3% 0 1% 0;
+  color: darkslategrey;
+}
+.main img {
+  padding: 20% 0 0 0;
+  width: 25%;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: mediumseagreen;
+}
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+}
+section h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  color: lightblue;
+  padding: 10% 0 5% 0;
+}
+section p {
+  padding: 2%;
+  font-size: 2.75rem;
+  text-align: justify;
+  color: ivory;
+}
+@media (max-width: 600px) {
+  section p {
+    padding: 0 0 10% 0;
+    border-bottom: 2px solid black;
+  }
+}
+footer {
+  background: purple;
+  text-align: center;
+  color: gold;
+}
+footer h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+footer p {
+  font-size: 2.5rem;
+}
